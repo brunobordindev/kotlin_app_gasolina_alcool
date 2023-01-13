@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="30dp"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Álcool ou Gasolina"
+        android:textAlignment="center"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        android:textColor="#000000"/>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+        android:text="Qual combustível está mais em conta?"
+        android:textSize="18sp"
+        android:textAlignment="center"
+        />
+
+    <EditText
+        android:id="@+id/edit_alcool"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Valor álcool"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/edit_gasolina"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="valor gasolina"
+        android:inputType="numberDecimal" />
+
+    <Button
+        android:id="@+id/btn_verificar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Verificar"
+        android:onClick="calcularPreco"/>
+
+    <TextView
+        android:id="@+id/text_resultado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:textAlignment="center"
+        android:text="TextView" />
+</LinearLayout>
